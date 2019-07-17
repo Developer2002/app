@@ -10,7 +10,7 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0-wkslz.mongodb.net/test?retr
 });
 
 app.get('/', async function(req, res) {
-  const users = await User.findOne();
+  const users = await User.find();
 
   res.send(users);
 });
